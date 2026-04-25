@@ -27,7 +27,7 @@ function create_juicing_recipe(event, type, ingredient, fluid, amount) {
     ingredient: {
       type: "tfc:not_rotten",
       ingredient: {
-        item: "tfc:food/cherry",
+        item: ingredient,
       },
     },
     result: {
@@ -42,25 +42,25 @@ function create_juicing_recipe(event, type, ingredient, fluid, amount) {
 
 // Create juicing recipes for all juices
 ServerEvents.recipes((event) => {
-    Object.keys(global["wizzys_hardrock_additions:juices"]).forEach(v => {
-        data = global["wizzys_hardrock_additions:juices"][v]
-        create_juicing_recipe(event, data[3], data[4], data[0], 100);
-    })
+  Object.keys(global["wizzys_hardrock_additions:juices"]).forEach((v) => {
+    let data = global["wizzys_hardrock_additions:juices"][v];
+    create_juicing_recipe(event, data[3], data[4], data[0], 100);
+  });
 });
 
 // Make all juices drinkable
-ServerEvents.highPriorityData(event => {
-    Object.keys(global["wizzys_hardrock_additions:juices"]).forEach(v => {
-        data = global["wizzys_hardrock_additions:juices"][v]
-        event.addJson(`tfc:drinkables/${v}.json`, {
-            "ingredient": data[0],
-            "thirst": 10,
-            "food": {
-                "hunger": 0,
-                "saturation": 0,
-                "fruit": data[3] == "fruit" ? 0.7 : 0,
-                "vegetable": data[3] == "vegetable" ? 0.7 : 0,
-            }
-        })
-  })
-})
+ServerEvents.highPriorityData((event) => {
+  Object.keys(global["wizzys_hardrock_additions:juices"]).forEach((v) => {
+    let data = global["wizzys_hardrock_additions:juices"][v];
+    event.addJson(`tfc:drinkables/${v}.json`, {
+      ingredient: data[0],
+      thirst: 10,
+      food: {
+        hunger: 0,
+        saturation: 0,
+        fruit: data[3] == "fruit" ? 0.7 : 0,
+        vegetable: data[3] == "vegetable" ? 0.7 : 0,
+      },
+    });
+  });
+});
