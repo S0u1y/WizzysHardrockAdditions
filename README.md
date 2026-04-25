@@ -12,7 +12,7 @@ This data is approximated from where you are currently standing. It should show 
 
 ## Juices!
 
-Many additional juices from berries!\
+Many additional juices from berries!
 > [!NOTE]
 > The amount of juiced juice as well as the thirst replenishment from the berries might very well get nerfed in the future.
 
