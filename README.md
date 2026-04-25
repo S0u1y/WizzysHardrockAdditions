@@ -16,3 +16,7 @@ Many additional juices from berries!
 > [!NOTE]
 > The amount of juiced juice as well as the thirst replenishment from the berries might very well get nerfed in the future.
 
+## Other/misc
+
+Blast furnaces and molten are added to charcoal forge whitelist, so now you can light one up if it's right below your blast furnace!\
+(Watch out for pollution though)
