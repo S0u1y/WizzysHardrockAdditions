@@ -29,17 +29,3 @@ These scripts add sewing repair recipes for all cloth armors.\
 If you want metal armors repairs, check out my mod here: \
 https://www.curseforge.com/minecraft/mc-mods/tfcgearrepairs \
 https://modrinth.com/mod/tfcgearrepair
-
-## Other/misc
-
-~~Blast furnaces and molten are added to charcoal forge whitelist, so now you can light one up if it's right below your blast furnace!\
-(Watch out for pollution though)~~
-
-> [!WARNING]
-> This is currently not working because the blocks have to be transparent. Currently being fixed.
-
-> [!IMPORTANT]
-> The forge won't be able to get the "direct sky access", so it will try to get that from blocks around it!
-> Below is shown, which blocks the forge checks.
-
-<img width="642" height="936" alt="obrazek" src="https://github.com/user-attachments/assets/e6e8255d-b519-4820-bbee-b2cd25a0e2a8" />
