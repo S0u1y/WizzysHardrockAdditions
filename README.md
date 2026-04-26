@@ -32,8 +32,11 @@ https://modrinth.com/mod/tfcgearrepair
 
 ## Other/misc
 
-Blast furnaces and molten are added to charcoal forge whitelist, so now you can light one up if it's right below your blast furnace!\
-(Watch out for pollution though)
+~~Blast furnaces and molten are added to charcoal forge whitelist, so now you can light one up if it's right below your blast furnace!\
+(Watch out for pollution though)~~
+
+> [!WARNING]
+> This is currently not working because the blocks have to be transparent. Currently being fixed.
 
 > [!IMPORTANT]
 > The forge won't be able to get the "direct sky access", so it will try to get that from blocks around it!
