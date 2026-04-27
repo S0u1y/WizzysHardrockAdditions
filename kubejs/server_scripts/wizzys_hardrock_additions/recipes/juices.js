@@ -52,7 +52,7 @@ ServerEvents.recipes((event) => {
 ServerEvents.highPriorityData((event) => {
   Object.keys(global["wizzys_hardrock_additions:juices"]).forEach((v) => {
     let data = global["wizzys_hardrock_additions:juices"][v];
-    event.addJson(`tfc:drinkables/${v}.json`, {
+    event.addJson(`tfc:tfc/drinkables/${v}.json`, {
       ingredient: data[0],
       thirst: 10,
       food: {
