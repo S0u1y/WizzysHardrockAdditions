@@ -23,9 +23,14 @@ Many additional juices from berries!
 
 <img width="651" height="172" alt="obrazek" src="https://github.com/user-attachments/assets/b9f8bd2d-a32f-467a-9aca-6bdc482b0d11" />
 
+## Charcoal pile picking
+
+A little feature to pick up charcoal from charcoal piles with rightclick.
+
 ## Suit Repairs
 
 These scripts add sewing repair recipes for all cloth armors.\
 If you want metal armors repairs, check out my mod here: \
 https://www.curseforge.com/minecraft/mc-mods/tfcgearrepairs \
 https://modrinth.com/mod/tfcgearrepair
+
